@@ -2,7 +2,7 @@
   Navigation
 ==================================================================*/
 .navigation {
-  transition: .3s all;
+  transition: 0.3s all;
 
   .logo-default {
     display: none;
@@ -17,7 +17,7 @@
         padding: 20px 15px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        transition: .2s ease-in-out 0s;
+        transition: 0.2s ease-in-out 0s;
 
         &:hover,
         &:active,
@@ -54,7 +54,7 @@
     left: 5px;
     display: block;
     visibility: hidden;
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -85,8 +85,8 @@
   }
 
   .dropdown-item {
-    color: rgba($color: $light, $alpha: .8);
-    transition: .2s ease;
+    color: rgba($color: $light, $alpha: 0.8);
+    transition: 0.2s ease;
     padding: 10px;
 
     &:hover {
@@ -119,8 +119,8 @@
     }
 
     .navbar-light .navbar-toggler {
-      color: rgba(#000, .5);
-      border-color: rgba(#000, .1);
+      color: rgba(#000, 0.5);
+      border-color: rgba(#000, 0.1);
     }
   }
 }
@@ -147,6 +147,7 @@
 }
 
 .navbar-brand {
+  margin-top: 0;
   height: auto;
   padding: 8px 0;
 }
