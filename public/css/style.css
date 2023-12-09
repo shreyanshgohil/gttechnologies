@@ -1958,6 +1958,14 @@ a:focus, a:hover {
   color: #fff;
 }
 
+@media only screen and (max-width: 1400px) {
+  .top-background {
+    display: none;
+  }
+  .bottom-background {
+    display: none;
+  }
+}
 /*============================================================
 	For Small Desktop
 ==============================================================*/
@@ -2088,7 +2096,7 @@ a:focus, a:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 30px;
-    width: 418px;
+    max-width: 418px;
     align-items: center;
     justify-content: center;
     margin: auto;
