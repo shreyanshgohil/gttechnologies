@@ -2098,6 +2098,12 @@ a:focus, a:hover {
 	Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 @media only screen and (max-width: 767px) {
+  nav.navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
   .support-service-area .support-all {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
