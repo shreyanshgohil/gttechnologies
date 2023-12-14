@@ -1872,6 +1872,9 @@ a:focus, a:hover {
 .support-service-area .support-service-area-title {
   padding: 12px 48px 48px 48px;
 }
+.support-service-area .support-service-area-title p {
+  max-width: 700px;
+}
 .support-service-area .support-all {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2098,6 +2101,12 @@ a:focus, a:hover {
 	Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 @media only screen and (max-width: 767px) {
+  nav.navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
   .support-service-area .support-all {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -1,7 +1,21 @@
 .support-service-area {
   padding: 100px 0;
+  .support-services {
+    &:hover {
+      .icon-gradient {
+        fill: #fff;
+      }
+    }
+  }
+  .icon-gradient {
+    fill: #28abe3;
+  }
   .support-service-area-title {
     padding: 12px 48px 48px 48px;
+    p {
+      max-width: 700px;
+      margin: auto;
+    }
   }
   .support-all {
     display: grid;

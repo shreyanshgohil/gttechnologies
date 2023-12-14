@@ -1869,8 +1869,18 @@ a:focus, a:hover {
 .support-service-area {
   padding: 100px 0;
 }
+.support-service-area .support-services:hover .icon-gradient {
+  fill: #fff;
+}
+.support-service-area .icon-gradient {
+  fill: #28abe3;
+}
 .support-service-area .support-service-area-title {
   padding: 12px 48px 48px 48px;
+}
+.support-service-area .support-service-area-title p {
+  max-width: 700px;
+  margin: auto;
 }
 .support-service-area .support-all {
   display: grid;
