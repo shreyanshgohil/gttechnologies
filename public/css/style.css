@@ -24,7 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -45,12 +46,15 @@ iframe {
   border: 0;
 }
 
-a, a:focus, a:hover {
+a,
+a:focus,
+a:hover {
   text-decoration: none;
   outline: 0;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #28ABE3;
 }
 
@@ -140,7 +144,9 @@ a:focus, a:hover {
   z-index: 999999999;
 }
 
-.btn.active:focus, .btn:active:focus, .btn:focus {
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
   outline: 0;
 }
 
@@ -277,7 +283,8 @@ a:focus, a:hover {
 .header-bradcrumb {
   background: transparent;
 }
-.header-bradcrumb a, .header-bradcrumb .active {
+.header-bradcrumb a,
+.header-bradcrumb .active {
   color: #cfcfcf;
   font-weight: 200;
   font-family: "Source Sans Pro", sans-serif;
@@ -317,7 +324,7 @@ a:focus, a:hover {
   cursor: pointer;
 }
 .colors-switcher #show-panel i {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 20px;
   line-height: 38px;
   margin-left: 10px;
@@ -346,7 +353,7 @@ a:focus, a:hover {
 }
 
 .colors-switcher .colors-list a.light-red {
-  background-color: #FF432E;
+  background-color: #ff432e;
 }
 
 .colors-switcher .colors-list li a:hover {
@@ -354,31 +361,43 @@ a:focus, a:hover {
 }
 
 .colors-switcher .colors-list a.light-red {
-  background-color: #FF432E;
+  background-color: #ff432e;
 }
 
 .colors-switcher .colors-list a.blue {
-  background-color: #28ABE3;
+  background-color: #28abe3;
 }
 
 .colors-switcher .colors-list a.light-blue {
-  background-color: #69D2E7;
+  background-color: #69d2e7;
 }
 
 .colors-switcher .colors-list a.green {
-  background-color: #5BB12F;
+  background-color: #5bb12f;
 }
 
 .colors-switcher .colors-list a.light-green {
-  background-color: #BCCF02;
+  background-color: #bccf02;
 }
 
 .colors-switcher .colors-list a.yellow {
-  background-color: #FED136;
+  background-color: #fed136;
 }
 
 .slick-slide {
   outline: none;
+}
+
+nav.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.icon-white a {
+  background-color: #fff;
 }
 
 .logo {
@@ -2098,12 +2117,6 @@ a:focus, a:hover {
 	Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 @media only screen and (max-width: 767px) {
-  nav.navbar {
-    padding: 0;
-  }
-  .navbar-brand {
-    padding: 0;
-  }
   .support-service-area .support-all {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
