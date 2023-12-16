@@ -1,12 +1,12 @@
-
 .no-padding {
-  padding:0!important;
+  padding: 0 !important;
 }
 .inline-block {
   display: inline-block;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,28 +17,31 @@ figure {
 }
 
 a {
-  -webkit-transition: all .3s ease-in 0s;
-  -moz-transition: all .3s ease-in 0s;
-  -o-transition: all .3s ease-in 0s;
-  transition: all .3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
 }
 
 iframe {
   border: 0;
 }
 
-a, a:focus, a:hover {
+a,
+a:focus,
+a:hover {
   text-decoration: none;
   outline: 0;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: $primary-color;
 }
 
 .btn-main {
   background: $primary-color;
-  border:1px solid $primary-color;
+  border: 1px solid $primary-color;
   color: $light;
   display: inline-block;
   font-size: 14px;
@@ -52,7 +55,7 @@ a:focus, a:hover {
 }
 .btn-transparent {
   color: $light;
-  border:1px solid $light;
+  border: 1px solid $light;
   display: inline-block;
   font-size: 13px;
   letter-spacing: 1px;
@@ -63,7 +66,6 @@ a:focus, a:hover {
     color: $light;
   }
 }
-
 
 .mt-10 {
   margin-top: 10px;
@@ -82,7 +84,7 @@ a:focus, a:hover {
 }
 
 .section {
-  padding:100px 0;
+  padding: 100px 0;
 }
 
 .btn:focus {
@@ -101,7 +103,6 @@ a:focus, a:hover {
   padding: 40px 0;
 }
 
-
 #preloader {
   background: #fff;
   height: 100%;
@@ -115,13 +116,11 @@ a:focus, a:hover {
   z-index: 999999999;
 }
 
-
-
-
-.btn.active:focus, .btn:active:focus, .btn:focus {
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
   outline: 0;
 }
-
 
 .parallax-section {
   background-attachment: fixed;
@@ -129,8 +128,6 @@ a:focus, a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 // Preloader
 .preloader {
@@ -193,7 +190,8 @@ a:focus, a:hover {
     transform: translateY(15px);
     background: $primary-color;
   }
-  50%,100% {
+  50%,
+  100% {
     height: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -206,7 +204,7 @@ a:focus, a:hover {
     height: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background:#fff;
+    background: #fff;
   }
   25% {
     height: 30px;
@@ -214,14 +212,14 @@ a:focus, a:hover {
     transform: translateY(15px);
     background: #3498db;
   }
-  50%,100% {
+  50%,
+  100% {
     height: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     background: #fff;
   }
 }
-
 
 // Common Styles
 .title {
@@ -235,7 +233,7 @@ a:focus, a:hover {
   p {
     color: #848484;
     width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
   }
   &.title-white {
     h2 {
@@ -255,12 +253,11 @@ a:focus, a:hover {
   background: #f9f9f9;
 }
 
-
-
 .header-bradcrumb {
   background: transparent;
-  a , .active {
-    color:#cfcfcf;
+  a,
+  .active {
+    color: #cfcfcf;
     font-weight: 200;
     font-family: $primary-font;
   }
@@ -269,100 +266,103 @@ a:focus, a:hover {
   }
 }
 
-
-
 // Color Switcher
 
 .colors-switcher {
-    width: 100px;
-    padding: 20px 18px 14px 20px;
-    position: fixed;
-    z-index: 1993;
-    top: 90px;
-    right: 0;
+  width: 100px;
+  padding: 20px 18px 14px 20px;
+  position: fixed;
+  z-index: 1993;
+  top: 90px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 2px 0 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  #show-panel {
+    position: absolute;
+    left: -38px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    z-index: 1992;
+    display: block;
     background-color: #fff;
     border-radius: 2px 0 0 2px;
-    border: 1px solid rgba(0,0,0,.1);
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    #show-panel {
-      position: absolute;
-      left: -38px;
-      top: 15px;
-      width: 38px;
-      height: 38px;
-      z-index: 1992;
-      display: block;
-      background-color: #fff;
-      border-radius: 2px 0 0 2px;
-      border: 1px solid rgba(0,0,0,.1);
-      border-right: none;
-      cursor: pointer;
-      i {
-        color: #3D3D3D;
-        font-size: 20px;
-        line-height: 38px;
-        margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: none;
+    cursor: pointer;
+    i {
+      color: #3d3d3d;
+      font-size: 20px;
+      line-height: 38px;
+      margin-left: 10px;
     }
   }
 }
 
-
-  .colors-list {
-    margin:0;
-    padding:0;
-    li {
+.colors-list {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    a {
+      text-align: center;
       display: inline-block;
-      margin-bottom: 2px;
-      margin-right: 4px;
-      a {
-        text-align: center;
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        border-radius: 2px;
-        transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-        -webkit-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        cursor: pointer;
-      }
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+      transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      cursor: pointer;
     }
   }
-  .colors-switcher .colors-list a.light-red {
-      background-color: #FF432E;
-  }
-  .colors-switcher .colors-list li a:hover {
-      box-shadow:inset 0 0 6px rgba(0,0,0,.4);
-  }
-  .colors-switcher .colors-list a.light-red {
-      background-color:#FF432E;
-  }
-  .colors-switcher .colors-list a.blue{
-      background-color:#28ABE3;
-  }
-  .colors-switcher .colors-list a.light-blue {
-      background-color:#69D2E7;
-  }
-  .colors-switcher .colors-list a.green {
-      background-color:#5BB12F;
-  }
-  .colors-switcher .colors-list a.light-green {
-      background-color:#BCCF02;
-  }
-  .colors-switcher .colors-list a.yellow {
-      background-color:#FED136;
-  }
-
+}
+.colors-switcher .colors-list a.light-red {
+  background-color: #ff432e;
+}
+.colors-switcher .colors-list li a:hover {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+.colors-switcher .colors-list a.light-red {
+  background-color: #ff432e;
+}
+.colors-switcher .colors-list a.blue {
+  background-color: #28abe3;
+}
+.colors-switcher .colors-list a.light-blue {
+  background-color: #69d2e7;
+}
+.colors-switcher .colors-list a.green {
+  background-color: #5bb12f;
+}
+.colors-switcher .colors-list a.light-green {
+  background-color: #bccf02;
+}
+.colors-switcher .colors-list a.yellow {
+  background-color: #fed136;
+}
 
 .slick-slide {
   outline: none;
 }
 
-
-
-
-
+nav.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  padding: 0;
+}
+.icon-white {
+  a {
+    background-color: #fff;
+  }
+}
