@@ -366,3 +366,13 @@ nav.navbar {
     background-color: #fff;
   }
 }
+.breadcrumb {
+  gap: 1rem;
+  *:not(.active) {
+    color: #28abe3;
+  }
+}
+
+.small-xs {
+  font-size: 50%;
+}
