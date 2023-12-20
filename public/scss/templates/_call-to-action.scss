@@ -3,8 +3,8 @@
 ==================================================================*/
 
 .call-to-action {
-  padding:100px 0;
-  background: url('../images/call-to-action/call-to-action-bg-2.jpg');
+  padding: 100px 0;
+  background: url("../images/call-to-action/call-to-action-bg-2.jpg");
   background-size: cover;
   color: $light;
   h2 {
@@ -18,17 +18,13 @@
   }
 }
 
-
-
-
-
 /*=================================================================
  Call To Action 2
 ==================================================================*/
 
 .call-to-action-2 {
-  padding:100px 0;
-  background-image: url('../images/call-to-action/call-to-action-bg.jpg');
+  padding: 100px 0;
+  background-image: url("../images/call-to-action/call-to-action-bg.jpg");
   background-size: cover;
   color: $light;
   h2 {
@@ -40,5 +36,4 @@
   .btn-main {
     margin-top: 20px;
   }
-  
 }
