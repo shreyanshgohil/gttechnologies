@@ -6,7 +6,7 @@ const router = express.Router();
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-
+require('dotenv').config()
 router.get("/", async (req, res) => {
     res.render(path.join(__dirname, "views", "ejs", "index.ejs"), { path: "/" });
 });
