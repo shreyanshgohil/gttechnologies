@@ -63,7 +63,7 @@ router.get("*", async (req, res) => {
     res.render(path.join(__dirname, "views", "ejs", "404.ejs"));
 });
 
-app.use('./netlify/functions', router);
+app.use(router);
 
 app.listen(port, () => {
     console.log("Server started at port " + port);
