@@ -1031,6 +1031,10 @@ nav.navbar {
 .pricing-table .pricing-item {
   padding: 40px 30px 65px;
   background: #fff;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .pricing-table .pricing-item a.btn-main {
   text-transform: uppercase;
