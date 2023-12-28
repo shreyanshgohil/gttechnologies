@@ -6,21 +6,27 @@
   padding: 100px 0 130px;
   .service-block {
     &.color-bg {
-      background:$primary-color;
-      color:$light;
-      i,h3,p {
-        color:$light;
+      background: $primary-color;
+      color: $light;
+      i,
+      h3,
+      p {
+        color: $light;
       }
     }
     .service-icon {
       margin-bottom: 30px;
+      svg {
+        height: 75px;
+        width: 60px;
+      }
     }
     i {
       font-size: 75px;
       color: $primary-color;
     }
     h3 {
-      color:#333;
+      color: #333;
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
@@ -31,7 +37,6 @@
     }
   }
 }
-
 
 /*=================================================================
   Services section 2
@@ -50,7 +55,7 @@
     }
     &:hover i {
       background: $light;
-      color:$primary-color;
+      color: $primary-color;
     }
     i {
       font-size: 30px;

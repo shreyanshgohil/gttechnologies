@@ -1153,11 +1153,17 @@ nav.navbar {
   background: #28abe3;
   color: #fff;
 }
-.services .service-block.color-bg i, .services .service-block.color-bg h3, .services .service-block.color-bg p {
+.services .service-block.color-bg i,
+.services .service-block.color-bg h3,
+.services .service-block.color-bg p {
   color: #fff;
 }
 .services .service-block .service-icon {
   margin-bottom: 30px;
+}
+.services .service-block .service-icon svg {
+  height: 75px;
+  width: 60px;
 }
 .services .service-block i {
   font-size: 75px;
