@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#28abe3" />
+    <meta
+      name="description"
+      content="GT Technologies: Unleashing the Power of Innovation through Expert Web Development – Your Success, Our Code."
+    />
+    <title>GT Technologies: your digital ideas to life.</title>
+    <meta name="image" content="/public/images/banner-media.png" />
+    <meta property="og:site_name" content="GT Technologies" />
+    <meta property="og:url" content="https://gt-technology.onrender.com/" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="GT Technologies: Unleashing the Power of Innovation through Expert Web Development – Your Success, Our Code."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="/public/images/banner-media.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="/plugins/themefisher-font/style.css" />
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/plugins/lightbox2/dist/css/lightbox.min.css"
+    />
+    <link rel="stylesheet" href="/plugins/animate/animate.css" />
+    <link rel="stylesheet" href="/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#28abe3">
-  <meta name="description" content="GT Technologies: Unleashing the Power of Innovation through Expert Web Development – Your Success, Our Code." />
-  <title>GT Technologies: your digital ideas to life.</title>
-  <meta name="image" content="/public/images/banner-media.png">
-  <meta property="og:site_name" content="GT Technologies">
-  <meta property="og:url" content="https://gt-technology.onrender.com/">
-  <meta data-react-helmet="true" property="og:type" content="website">
-  <meta data-react-helmet="true" property="og:title" content="GT Technologies: Unleashing the Power of Innovation through Expert Web Development – Your Success, Our Code." >
-  <meta data-react-helmet="true" property="og:image" content="/public/images/banner-media.png">
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  <link rel="stylesheet" href="/plugins/themefisher-font/style.css" />
-  <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/plugins/lightbox2/dist/css/lightbox.min.css" />
-  <link rel="stylesheet" href="/plugins/animate/animate.css" />
-  <link rel="stylesheet" href="/plugins/slick/slick.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
+  <body id="body">
+    <header class="navigation fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand logo" href="/">
+            <img
+              class="logo-default"
+              src="images/gt_logo_black.svg"
+              alt="logo"
+            />
+            <img class="logo-white" src="images/gt_logo_white.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body id="body">
-  <header class="navigation fixed-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo" href="/">
-          <img class="logo-default" src="images/gt_logo_black.svg" alt="logo" />
-          <img class="logo-white" src="images/gt_logo_white.svg" alt="logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item dropdown <%if (path==='/') { %> active <% } %>">
-              <a class="nav-link " href="/" id="navbarDropdown" role="button">
-                Homepage
-              </a>
-            </li>
-            <li class="nav-item <%if (path==='/about') { %> active <% } %>">
-              <a class="nav-link" href="/about">About Us</a>
-            </li>
-            <li class="nav-item <%if (path==='/service') { %> active <% } %>">
-              <a class="nav-link" href="/service">Services</a>
-            </li>
-            <li class="nav-item <%if (path==='/pricing') { %> active <% } %>">
-              <a class="nav-link" href="/pricing">Pricing</a>
-            </li>
-            <li class="nav-item <%if (path==='/contact') { %> active <% } %>">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-</body>
-
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto text-center">
+              <li
+                class="nav-item dropdown <%if (path==='/') { %> active <% } %>"
+              >
+                <a class="nav-link" href="/" id="navbarDropdown" role="button">
+                  Homepage
+                </a>
+              </li>
+              <li class="nav-item <%if (path==='/about') { %> active <% } %>">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item <%if (path==='/service') { %> active <% } %>">
+                <a class="nav-link" href="/service">Services</a>
+              </li>
+              <li class="nav-item <%if (path==='/pricing') { %> active <% } %>">
+                <a class="nav-link" href="/pricing">Pricing</a>
+              </li>
+              <li class="nav-item <%if (path==='/contact') { %> active <% } %>">
+                <a class="nav-link" href="/contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
