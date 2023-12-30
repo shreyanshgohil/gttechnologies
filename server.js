@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const { PrismaClient } = require('@prisma/client')
 const port = 3001;
 const app = express();
 const router = express.Router();
@@ -7,6 +8,21 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 require('dotenv').config()
+
+
+
+const Prisma = new PrismaClient();
+
+// Database Connection
+Prisma
+    .$connect()
+    .then(() => {
+        console.log('Database connected successfully');
+    })
+    .catch((error) => {
+        console.log('Database connection error:', error);
+    });
+
 router.get("/", async (req, res) => {
     res.render(path.join(__dirname, "views", "ejs", "index.ejs"), { path: "/" });
 });
@@ -63,7 +79,17 @@ router.get("*", async (req, res) => {
     res.render(path.join(__dirname, "views", "ejs", "404.ejs"));
 });
 
+router.post('/api/contact', async (req, res) => {
+    const response = await Prisma.user.create({
+        data: {
+            name: "Shreyansh"
+        }
+    })
+    console.log(response, "eeee")
+})
+
 app.use(router);
+
 
 app.listen(port, () => {
     console.log("Server started at port " + port);
