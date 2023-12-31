@@ -13,7 +13,7 @@ require('dotenv').config()
 
 const Prisma = new PrismaClient();
 
-// Database Connection
+
 Prisma
     .$connect()
     .then(() => {
@@ -80,12 +80,12 @@ router.get("*", async (req, res) => {
 });
 
 router.post('/api/contact', async (req, res) => {
-    const response = await Prisma.user.create({
-        data: {
-            name: "Shreyansh"
-        }
-    })
-    console.log(response, "eeee")
+    // await Prisma.user.create({
+    //     data: {
+    //         name: "Shreyansh"
+    //     }
+    // })
+    // res.status(200).json({ message: "Messages stand successfully" })
 })
 
 app.use(router);
