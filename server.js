@@ -1,18 +1,17 @@
 const express = require("express");
 const path = require("path");
-const { PrismaClient } = require('@prisma/client')
+const { PrismaClient } = require('@prisma/client');
+const { CompletionTriggerKind } = require("typescript");
 const port = 3001;
 const app = express();
 const router = express.Router();
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.json());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 require('dotenv').config()
 
-
-
 const Prisma = new PrismaClient();
-
 
 Prisma
     .$connect()
@@ -80,10 +79,8 @@ router.get("*", async (req, res) => {
 });
 
 router.post('/api/contact', async (req, res) => {
-    await Prisma.user.create({
-        data: {
-            name: "Shreyansh"
-        }
+    await Prisma.messages.create({
+        data: req.body
     })
     res.status(200).json({ message: "Messages stand successfully" })
 })

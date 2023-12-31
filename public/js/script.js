@@ -15,7 +15,7 @@
     });
   });
 
-  
+
   //Hero Slider
   $('.hero-slider').slick({
     autoplay: true,
@@ -51,14 +51,14 @@
   /*	Portfolio Filtering Hook
   /* =========================================================================  */
 
-    // filter
-    setTimeout(function(){
-      var containerEl = document.querySelector('.filtr-container');
-      var filterizd;
-      if (containerEl) {
-        filterizd = $('.filtr-container').filterizr({});
-      }
-    }, 500);
+  // filter
+  setTimeout(function () {
+    var containerEl = document.querySelector('.filtr-container');
+    var filterizd;
+    if (containerEl) {
+      filterizd = $('.filtr-container').filterizr({});
+    }
+  }, 500);
 
   /* ========================================================================= */
   /*	Testimonial Carousel
@@ -108,49 +108,49 @@
   /* ========================================================================= */
 
   $('#contact-form').validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 4
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        subject: {
-          required: false
-        },
-        message: {
-          required: true
-        }
+    rules: {
+      name: {
+        required: true,
+        minlength: 4
       },
-      messages: {
-        user_name: {
-          required: 'Come on, you have a name don\'t you?',
-          minlength: 'Your name must consist of at least 2 characters'
-        },
-        email: {
-          required: 'Please put your email address'
-        },
-        message: {
-          required: 'Put some messages here?',
-          minlength: 'Your name must consist of at least 2 characters'
-        }
+      email: {
+        required: true,
+        email: true
       },
-      submitHandler: function (form) {
-        $(form).ajaxSubmit({
-          type: 'POST',
-          data: $(form).serialize(),
-          url: 'sendmail.php',
-          success: function () {
-            $('#contact-form #success').fadeIn();
-          },
-          error: function () {
-            $('#contact-form #error').fadeIn();
-          }
-        });
+      subject: {
+        required: false
+      },
+      message: {
+        required: true
       }
+    },
+    messages: {
+      user_name: {
+        required: 'Come on, you have a name don\'t you?',
+        minlength: 'Your name must consist of at least 2 characters'
+      },
+      email: {
+        required: 'Please put your email address'
+      },
+      message: {
+        required: 'Put some messages here?',
+        minlength: 'Your name must consist of at least 2 characters'
+      }
+    },
+    submitHandler: function (form) {
+      $(form).ajaxSubmit({
+        type: 'POST',
+        data: $(form).serialize(),
+        url: 'sendmail.php',
+        success: function () {
+          $('#contact-form #success').fadeIn();
+        },
+        error: function () {
+          $('#contact-form #error').fadeIn();
+        }
+      });
     }
+  }
 
   );
 
@@ -195,3 +195,29 @@
   });
 
 })(jQuery);
+
+
+const contactForm = document.querySelector("#contact-form")
+
+const submitFormDataHandler = async (event) => {
+  event.preventDefault()
+  const name = event.target.name.value
+  const phone = event.target.phone.value
+  const email = event.target.email.value
+  const subject = event.target.subject.value
+  const message = event.target.message.value
+  const formObj = {
+    name, phone, email, subject, message
+  }
+  await fetch('/api/contact', {
+    method: "POST",
+    body: JSON.stringify(formObj),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', submitFormDataHandler)
+}
