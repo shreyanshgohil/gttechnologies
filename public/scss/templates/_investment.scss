@@ -1,6 +1,7 @@
 .support-service-area {
   padding: 100px 0;
   .support-services {
+    height: 100%;
     &:hover {
       .icon-gradient {
         fill: #fff;
@@ -20,7 +21,8 @@
   .support-all {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
+    gap: 30px;
+
     position: relative;
     .top-background {
       position: absolute;
@@ -44,7 +46,6 @@
   border-radius: 3px;
   transition: 0.4s;
   z-index: 1;
-  margin-bottom: 30px;
   border: 1px solid #28abe3;
 }
 .support-services::after {
@@ -60,7 +61,6 @@
   z-index: -1;
 }
 .support-images {
-  float: left;
   font-size: 44px;
   color: #28abe3;
   line-height: 70px;
@@ -72,7 +72,8 @@
   border-radius: 50%;
 }
 .support-content {
-  padding-left: 100px;
+  margin-top: 16px;
+  // padding-left: 100px;
 }
 .support-content h4 {
   font-size: 24px;

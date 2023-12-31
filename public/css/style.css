@@ -124,7 +124,7 @@ a:hover {
 }
 
 .section-sm {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .section-xs {
@@ -1147,7 +1147,7 @@ nav.navbar {
   Services section
 ==================================================================*/
 .services {
-  padding: 100px 0 130px;
+  padding: 100px 0 0 0;
 }
 .services .service-block.color-bg {
   background: #28abe3;
@@ -1908,6 +1908,9 @@ nav.navbar {
 .support-service-area {
   padding: 100px 0;
 }
+.support-service-area .support-services {
+  height: 100%;
+}
 .support-service-area .support-services:hover .icon-gradient {
   fill: #fff;
 }
@@ -1924,7 +1927,7 @@ nav.navbar {
 .support-service-area .support-all {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
+  gap: 30px;
   position: relative;
 }
 .support-service-area .support-all .top-background {
@@ -1948,7 +1951,6 @@ nav.navbar {
   border-radius: 3px;
   transition: 0.4s;
   z-index: 1;
-  margin-bottom: 30px;
   border: 1px solid #28abe3;
 }
 
@@ -1966,7 +1968,6 @@ nav.navbar {
 }
 
 .support-images {
-  float: left;
   font-size: 44px;
   color: #28abe3;
   line-height: 70px;
@@ -1979,7 +1980,7 @@ nav.navbar {
 }
 
 .support-content {
-  padding-left: 100px;
+  margin-top: 16px;
 }
 
 .support-content h4 {
