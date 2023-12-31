@@ -8,6 +8,7 @@
     "server": "nodemon server.js",
     "dev": "sass --watch ./public/scss/style.scss ./public/css/style.css",
     "start": " npx prisma generate && NODE_OPTIONS=--openssl-legacy-provider node server.js",
+    "vercel-build": "prisma generate && prisma migrate deploy",
     "prod": "node server.js"
   },
   "keywords": [],

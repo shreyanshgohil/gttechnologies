@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-// const { PrismaClient } = require('@prisma/client')
+const { PrismaClient } = require('@prisma/client')
 const port = 3001;
 const app = express();
 const router = express.Router();
@@ -11,17 +11,17 @@ require('dotenv').config()
 
 
 
-// const Prisma = new PrismaClient();
+const Prisma = new PrismaClient();
 
 
-// Prisma
-//     .$connect()
-//     .then(() => {
-//         console.log('Database connected successfully');
-//     })
-//     .catch((error) => {
-//         console.log('Database connection error:', error);
-//     });
+Prisma
+    .$connect()
+    .then(() => {
+        console.log('Database connected successfully');
+    })
+    .catch((error) => {
+        console.log('Database connection error:', error);
+    });
 
 router.get("/", async (req, res) => {
     res.render(path.join(__dirname, "views", "ejs", "index.ejs"), { path: "/" });
@@ -80,12 +80,12 @@ router.get("*", async (req, res) => {
 });
 
 router.post('/api/contact', async (req, res) => {
-    // await Prisma.user.create({
-    //     data: {
-    //         name: "Shreyansh"
-    //     }
-    // })
-    // res.status(200).json({ message: "Messages stand successfully" })
+    await Prisma.user.create({
+        data: {
+            name: "Shreyansh"
+        }
+    })
+    res.status(200).json({ message: "Messages stand successfully" })
 })
 
 app.use(router);
