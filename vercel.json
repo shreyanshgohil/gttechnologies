@@ -1,17 +1,13 @@
 {
   "version": 2,
-  "builds": [
+  "builds": [{
+    "src": "./server.js",
+    "use": "@vercel/node"
+  }],
+  "routes": [{"handle": "filesystem"},
     {
-      "src": "./server.js",
-      "use": "@vercel/node"
+      "src": "/.*",
+      "dest": "server.js"
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "server.js" }
-  ],
-  "build": {
-    "command": "npx prisma generate",
-    "succeedOnBuildError": true
-  }
+  ]
 }
