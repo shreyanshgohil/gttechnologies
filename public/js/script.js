@@ -118,19 +118,28 @@
         email: true
       },
       subject: {
-        required: false
+        required: true
+      },
+      phone: {
+        required: true
       },
       message: {
         required: true
       }
     },
     messages: {
-      user_name: {
-        required: 'Come on, you have a name don\'t you?',
+      name: {
+        required: 'Please enter your name',
         minlength: 'Your name must consist of at least 2 characters'
       },
       email: {
-        required: 'Please put your email address'
+        required: 'Please enter your email address'
+      },
+      subject: {
+        required: 'Please give some subject for message'
+      },
+      phone: {
+        required: 'Please enter your phone number'
       },
       message: {
         required: 'Put some messages here?',
@@ -209,13 +218,15 @@ const submitFormDataHandler = async (event) => {
   const formObj = {
     name, phone, email, subject, message
   }
-  await fetch('/api/contact', {
-    method: "POST",
-    body: JSON.stringify(formObj),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
+  if (name, email, phone, email, message) {
+    await fetch('/api/contact', {
+      method: "POST",
+      body: JSON.stringify(formObj),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+  }
 }
 
 if (contactForm) {
