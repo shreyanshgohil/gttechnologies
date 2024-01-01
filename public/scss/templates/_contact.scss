@@ -2,39 +2,39 @@
   Contact
   ==================================================================*/
 .contact-us {
-  padding: 100px 0 50px 0;
+  padding: 100px 0 100px 0;
 }
 
 .contact-form {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   .form-control {
     background-color: transparent;
     border: 1px solid #dedede;
     box-shadow: none;
-    height: 45px!important;
+    height: 45px !important;
     color: #0c0c0c;
     height: 38px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     border-radius: 0;
   }
-  input:hover, 
+  input:hover,
   textarea:hover,
   #contact-submit:hover {
     border-color: $primary-color;
   }
   #contact-submit {
-    border:none;
+    border: none;
     padding: 15px 0;
     width: 100%;
     margin: 0;
     background: $primary-color;
-    color:$light;
+    color: $light;
     border-radius: 0;
   }
   textarea.form-control {
     padding: 10px;
-    height: 120px!important;
+    height: 120px !important;
     outline: none;
   }
 }
@@ -63,8 +63,8 @@
         text-align: center;
         &:hover {
           background: $primary-color;
-          color:$light;
-          border:1px solid $primary-color;
+          color: $light;
+          border: 1px solid $primary-color;
           i {
             color: $light;
           }
@@ -83,10 +83,10 @@
 
 .error {
   padding: 10px;
-  color: #D8000C;
+  color: #d8000c;
   border-radius: 2px;
   font-size: 14px;
-  background-color: #FFBABA;
+  background-color: #ffbaba;
 }
 
 .success {
@@ -97,15 +97,16 @@
   padding: 10px;
 }
 
-#error, #success{
+#error,
+#success {
   display: none;
   margin-bottom: 10px;
 }
 
-.map{
+.map {
   position: relative;
-  #map_canvas{
-    height:400px;
+  #map_canvas {
+    height: 400px;
     color: white;
   }
 }
