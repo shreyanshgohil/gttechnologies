@@ -44,8 +44,8 @@ h6 {
   font-weight: 600;
 
   @media (min-width: 768px) {
-    font-size: 2rem /* 32px */;
-    line-height: 2.5rem /* 40px */;
+    font-size: 1.75rem /* 28px */;
+    line-height: 2.25rem /* 36px */;
   }
 
   @media (min-width: 1024px) {
@@ -55,13 +55,22 @@ h6 {
 }
 
 .text--xxl {
-  @apply text-xl md:text-2xl lg:text-2.5xl;
+  font-size: 26px !important /* 24px */;
+  line-height: 2rem !important/* 32px */;
+  @media (min-width: 1024px) {
+    font-size: 1.75rem !important/* 28px */;
+    line-height: 2.25rem !important/* 36px */;
+  }
 }
 
 .text--xl {
-  @apply text-lg md:text-xl lg:text-1.5xl;
+  font-size: 1.5rem !important /* 24px */;
+  line-height: 2rem !important/* 32px */;
+  @media (min-width: 1024px) {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+  }
 }
-
 .text--lg {
   font-size: 1rem !important;
   line-height: 1.5rem !important;

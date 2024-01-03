@@ -113,12 +113,17 @@
   }
 
   h1 {
+    margin-bottom: 4px;
     color: #fff;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 2px;
     font-weight: 700;
-    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      font-size: 1.75rem /* 28px */;
+      line-height: 2.25rem /* 36px */;
+      margin-bottom: 20px;
+    }
   }
 
   p {

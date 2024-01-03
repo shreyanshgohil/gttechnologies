@@ -45,12 +45,15 @@
   position: relative;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  padding: 40px;
   overflow: hidden;
   border-radius: 3px;
   transition: 0.4s;
   z-index: 1;
   border: 1px solid #28abe3;
+  padding: 20px;
+  @media (min-width: 768px) {
+    padding: 40px;
+  }
 }
 .support-services::after {
   position: absolute;
@@ -65,15 +68,20 @@
   z-index: -1;
 }
 .support-images {
-  font-size: 44px;
   color: #28abe3;
   line-height: 70px;
-  width: 70px;
-  height: 70px;
   border: 1px solid #28abe3;
   text-align: center;
   margin-right: 30px;
   border-radius: 50%;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  @media (min-width: 768px) {
+    height: 70px;
+    width: 70px;
+    font-size: 44px;
+  }
 }
 .support-content {
   margin-top: 16px;

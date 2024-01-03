@@ -49,8 +49,8 @@ h6 {
 }
 @media (min-width: 768px) {
   .heading--h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 @media (min-width: 1024px) {
@@ -61,11 +61,25 @@ h6 {
 }
 
 .text--xxl {
-  @apply text-xl md:text-2xl lg:text-2.5xl;
+  font-size: 26px !important;
+  line-height: 2rem !important;
+}
+@media (min-width: 1024px) {
+  .text--xxl {
+    font-size: 1.75rem !important;
+    line-height: 2.25rem !important;
+  }
 }
 
 .text--xl {
-  @apply text-lg md:text-xl lg:text-1.5xl;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+@media (min-width: 1024px) {
+  .text--xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .text--lg {
@@ -737,12 +751,19 @@ nav.navbar {
   transform: translateY(-50%);
 }
 .slider-item h1 {
+  margin-bottom: 4px;
   color: #fff;
   font-size: 60px;
   line-height: 70px;
   letter-spacing: 2px;
   font-weight: 700;
-  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .slider-item h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin-bottom: 20px;
+  }
 }
 .slider-item p {
   color: #fff;
@@ -1301,6 +1322,14 @@ nav.navbar {
 /*=================================================================
   Our skills
 ==================================================================*/
+.team-skills {
+  padding-bottom: 50;
+}
+@media (min-width: 768px) {
+  .team-skills {
+    padding: 100px 0px;
+  }
+}
 .team-skills .progress-block {
   margin-top: 40px;
 }
@@ -1355,19 +1384,22 @@ nav.navbar {
 .development-steps .step-2 {
   background-color: #28abe3;
 }
-.development-steps .step-2 h4, .development-steps .step-2 p {
+.development-steps .step-2 h4,
+.development-steps .step-2 p {
   color: #fff;
 }
 .development-steps .step-3 {
   background: #198dbf;
 }
-.development-steps .step-3 h4, .development-steps .step-3 p {
+.development-steps .step-3 h4,
+.development-steps .step-3 p {
   color: #fff;
 }
 .development-steps .step-4 {
   background: #167da9;
 }
-.development-steps .step-4 h4, .development-steps .step-4 p {
+.development-steps .step-4 h4,
+.development-steps .step-4 p {
   color: #fff;
 }
 
@@ -2036,12 +2068,17 @@ nav.navbar {
   position: relative;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  padding: 40px;
   overflow: hidden;
   border-radius: 3px;
   transition: 0.4s;
   z-index: 1;
   border: 1px solid #28abe3;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .support-services {
+    padding: 40px;
+  }
 }
 
 .support-services::after {
@@ -2058,15 +2095,22 @@ nav.navbar {
 }
 
 .support-images {
-  font-size: 44px;
   color: #28abe3;
   line-height: 70px;
-  width: 70px;
-  height: 70px;
   border: 1px solid #28abe3;
   text-align: center;
   margin-right: 30px;
   border-radius: 50%;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+}
+@media (min-width: 768px) {
+  .support-images {
+    height: 70px;
+    width: 70px;
+    font-size: 44px;
+  }
 }
 
 .support-content {
