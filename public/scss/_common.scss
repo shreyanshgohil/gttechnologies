@@ -376,3 +376,10 @@ nav.navbar {
 .small-xs {
   font-size: 50%;
 }
+
+.home-power-text {
+  font-size: 28px;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}

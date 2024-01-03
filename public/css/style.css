@@ -504,6 +504,15 @@ nav.navbar {
   font-size: 50%;
 }
 
+.home-power-text {
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .home-power-text {
+    font-size: 32px;
+  }
+}
+
 .logo {
   margin-top: 10px;
   display: inline-block;
