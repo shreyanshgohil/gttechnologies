@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gtglobals.com/
+
+# Sitemaps
+Sitemap: https://gtglobals.com/sitemap.xml
+
